@@ -20,13 +20,33 @@
             </ul>
         </div>
     </header>
-    <form action="process_login.php" method="post">
-<label for="email"><b>Email</b></label>
-    <input type="text" placeholder="Enter email" name="email" required>
-    <label for="password"><b>Password</b></label>
-    <input type="password" placeholder="Enter password" name="password" required>
 
-    <button type="submit">Login</button>
-    </form>
 
+    <div class="center">
+        <h1>Login</h1>
+
+        <form action="process_login.php" method="post">
+           
+            <div class="txt_field">
+                <input type="text" required>
+                <span></span>
+                <label for="">Email:</label>
+            </div>
+
+            <div class="txt_field">
+                <input type="password" required>
+                <span></span>
+                <label for="">Password:</label>
+            </div>
+
+            <div class="pass">Forgot password?</div>
+            <input type="submit" value = "Login">
+
+            <div class="signup_link">
+                Not a member? <a href="register.html">Signup</a>
+            </div>
+
+
+        </form>
+    </div>
 </body>
